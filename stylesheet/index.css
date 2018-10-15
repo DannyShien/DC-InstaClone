@@ -1,0 +1,55 @@
+/* border-box hack */ 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+/* aquino's special sauce*/ 
+html, body {
+    margin: 0px;
+    padding: 0px; 
+    height: 100%; 
+    width: 100%;
+}
+
+/* begin "picture frame" technique to resize images */
+.thumbnail-item {
+    /* 1. controls the size of image */
+    height: 150px;
+    width: 30%;
+    margin-bottom: 20px;
+    /* outline: 1px solid red; */
+
+    /* alternative to using
+    flexbox for centering 
+    of images or text. */
+
+    text-align: center;
+}
+.thumbnail-item > img {
+    /* the img adapts to its parent */
+    /* definitely, absolutely use moth max-height and max-width */
+    max-height: 100%; 
+    max-width: 100%;
+}
+/* end "picture-frame" technique to rezise images */
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap; 
+    /* space-* distribures leftover space */
+    justify-content: space-around;
+}
+.picture-frame {
+    width: 90%;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+    text-align: center; 
+}
+.picture-frame > img {
+    /* the img adats to its parent */
+    /* definitely, absolutely use both max-height and max-width */
+    max-height: 100%; 
+    max-width: 100;
+}
