@@ -18,7 +18,7 @@ const IMAGES = [
 // const IMAGE = [
 
 // ];
-
+const thumbnailContainer = document.querySelector('[data-container]');
 const outputElement = document.querySelector('[data-output]');
 
 // function that generates  an img element
@@ -26,7 +26,6 @@ function createImage(imageInfo) {
     const theImage = document.createElement('img');
 
     // theImage.src = imageInfo;
-    // debugger
     theImage.setAttribute('src', imageInfo.pics); 
     theImage.setAttribute('alt', imageInfo.alt);
 
@@ -66,8 +65,8 @@ function createThumbnail(imageInfo) {
 // For anon func should except to rceive an image
 IMAGES.forEach(function (anImageInfo) {
     // We pass the image to our createThumbnail func. 
-    let testThumb = createThumbnail(anImageInfo);
+    let thumbnail = createThumbnail(anImageInfo);
 
     // then append that thumbnail to the page. 
-    document.body.appendChild(testThumb);
+    thumbnailContainer.appendChild(thumbnail);
 }); 
