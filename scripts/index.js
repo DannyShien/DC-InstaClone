@@ -20,6 +20,9 @@ const IMAGES = [
 // ];
 const thumbnailContainer = document.querySelector('[data-container]');
 const outputElement = document.querySelector('[data-output]');
+const modalElement = document.querySelector('[data-modal');
+// console.log(modalElement);
+
 
 // function that generates  an img element
 function createImage(imageInfo) {
@@ -40,6 +43,9 @@ function createImage(imageInfo) {
         // I can now set the output image's src
         // to event.target.src!
         outputElement.setAttribute('src', event.target.src);
+        // modalElement.classList.toggle('modal-hidden');
+        //"remove" is more specific
+        modalElement.classList.remove('modal-hidden');
     });
 
     return theImage;
@@ -70,3 +76,11 @@ IMAGES.forEach(function (anImageInfo) {
     // then append that thumbnail to the page. 
     thumbnailContainer.appendChild(thumbnail);
 }); 
+
+window.addEventListener('keydown', function (event) {
+    console.log('keydown');
+    if (event.keyCode === 27) {
+        console.log('Hide modal');
+        modalElement.classList.add('modal-hidden');
+    }
+});
