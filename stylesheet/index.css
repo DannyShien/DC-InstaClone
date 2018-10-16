@@ -13,8 +13,78 @@ html, body {
     height: 100%; 
     width: 100%;
 }
+/* Navbar Logo */
+.ig-navbar {
+    /* outline: 1px solid red; */
+    display: flex;
+    margin: 1px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.ig-logo {
+    /* outline: 1px solid cornflowerblue; */
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+}
+.fab {
+    /* outline: 1px solid green; */
+    font-size: 30px;
+    margin: 5px;
+    padding: 0 10px 0 10px; 
+}
+.split {
+    background-color: #262626;
+    height: 28px;
+    margin: 0 16px;
+    width: 1px;
+}
+.logo-text {
+    /* outline: 1px solid black; */
+    margin: 0 10px 0 10px;
+    padding: 0 5px 0 5px;
+}
+.features {
+    /* outline: 1px solid orange; */
+    /* margin: 5px; */
+    /* padding: 7px; */
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 22px;
+
+}
+.fa-compass {
+    /* outline: 1px solid red; */
+    /* font-size: 22px; */
+    /* margin-left: 10px; */
+    /* margin:0 20px 0 20px; */
+    padding-left: 15px;
+}
+.fa-heart {
+    /* outline: 1px solid red; */
+    padding-left: 15px;
+    /* margin:0 10px 0 10px; */
+}
+.fa-user {
+    /* outline: 1px solid red; */
+    padding-left: 15px;
+    /* margin:0 10px 0 10px; */
+
+}
+
+
+
+
+
+/* Image Feed  */
+
 .thumbnail-container {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: flex;
     flex-wrap: wrap; 
     /* space-* distribures leftover space */
@@ -31,7 +101,7 @@ html, body {
     margin-top: 19px;
     margin-left: 24px;
     margin-bottom: 19px;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     /* align-content: center; */
     
     /* alternative to using
@@ -45,7 +115,7 @@ html, body {
     /* definitely, absolutely use moth max-height and max-width */
     max-height: 100%; 
     max-width: 100%;
-    outline: 2px solid orange;
+    /* outline: 2px solid orange; */
     /* object-fit: contain; */
 
 }
@@ -61,6 +131,10 @@ html, body {
     /* definitely, absolutely use both max-height and max-width */
     max-height: 100%; 
     max-width: 100;
+}
+img {
+    height: 650px; 
+    width: 1000px;
 }
 .modal {
     /* 
@@ -78,9 +152,9 @@ html, body {
     left: 0;
     top: 0;
     width: 100%;
-    min-height: 100%;
+    height: 75%;
     /* border: 5px solid red; */
-    background-color: rbga(0, 0, 0, 0.7);
+    background-color: rbga(0, 0, 0, 0.5);
 
     display: flex; 
     justify-content: center; 
