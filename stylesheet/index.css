@@ -13,36 +13,45 @@ html, body {
     height: 100%; 
     width: 100%;
 }
-
+.thumbnail-container {
+    outline: 1px solid red;
+    display: flex;
+    flex-wrap: wrap; 
+    /* space-* distribures leftover space */
+    justify-content: flex-start;
+    /* margin: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
+}
 /* begin "picture frame" technique to resize images */
 .thumbnail-item {
     /* 1. controls the size of image */
-    height: 150px;
+    height: 293px;
     width: 30%;
-    margin-bottom: 20px;
-    /* outline: 1px solid red; */
-
+    margin-top: 19px;
+    margin-left: 24px;
+    margin-bottom: 19px;
+    outline: 1px solid blue;
+    /* align-content: center; */
+    
     /* alternative to using
     flexbox for centering 
     of images or text. */
-
-    text-align: center;
+    
+    /* text-align: center; */
 }
 .thumbnail-item > img {
     /* the img adapts to its parent */
     /* definitely, absolutely use moth max-height and max-width */
     max-height: 100%; 
     max-width: 100%;
+    outline: 2px solid orange;
+    /* object-fit: contain; */
+
 }
 /* end "picture-frame" technique to rezise images */
-.thumbnail-container {
-    display: flex;
-    flex-wrap: wrap; 
-    /* space-* distribures leftover space */
-    justify-content: space-around;
-}
 .picture-frame {
-    width: 90%;
+    width: 75%;
     /* outline: 1px solid red; */
     margin: 0 auto;
     text-align: center; 
@@ -69,9 +78,9 @@ html, body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     /* border: 5px solid red; */
-    background-color: rbga(0, 0, 0, 0.5);
+    background-color: rbga(0, 0, 0, 0.7);
 
     display: flex; 
     justify-content: center; 

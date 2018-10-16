@@ -24,7 +24,7 @@ const modalElement = document.querySelector('[data-modal');
 // console.log(modalElement);
 
 
-// function that generates  an img element
+// function that generates an img element
 function createImage(imageInfo) {
     const theImage = document.createElement('img');
 
@@ -80,7 +80,7 @@ IMAGES.forEach(function (anImageInfo) {
 window.addEventListener('keydown', function (event) {
     console.log('keydown');
     if (event.keyCode === 27) {
-        console.log('Hide modal');
+        console.log('Modal hidden');
         modalElement.classList.add('modal-hidden');
     }
 });
